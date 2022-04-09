@@ -3,7 +3,7 @@
 ## DefaultState: enabled
 ## RequiredDeps: DBM-Core
 ## Author: Milho
-## Version: 0.1.0
+## Version: 0.1.1
 ## X-Curse-Project-ID: 607104
 ## X-DBM-Voice: 1
 ## X-DBM-Voice-Name: French Female by Milho
