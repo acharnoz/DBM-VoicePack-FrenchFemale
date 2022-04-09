@@ -13,4 +13,12 @@ This is a french female voice pack for DBM (Deadly Boss Mods) created by Milho a
  
 If there are any suggestions/problems, please contact me.
 
+**Revisions:**
+
+**v0.1.1**
+* Fix di.ogg and didi.ogg
+
+**v0.1.0**
+* Initial alpha version
+
  
