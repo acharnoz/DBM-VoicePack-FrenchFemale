@@ -7,6 +7,6 @@
 ## X-Curse-Project-ID: 607104
 ## X-DBM-Voice: 1
 ## X-DBM-Voice-Name: French Female by Milho
-## X-DBM-Voice-ShortName: French Female
+## X-DBM-Voice-ShortName: FrenchFemale
 ## X-DBM-Voice-Version: 12
 ## X-DBM-Voice-HasCount: 1
