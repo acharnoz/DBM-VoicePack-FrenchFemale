@@ -15,6 +15,9 @@ If there are any suggestions/problems, please contact me.
 
 **Revisions:**
 
+**v0.1.2**
+* Fix toc file
+
 **v0.1.1**
 * Fix di.ogg and didi.ogg
 
