@@ -15,6 +15,9 @@ If there are any suggestions/problems, please contact me.
 
 **Revisions:**
 
+**v0.1.3**
+* Fix 'run out' translation
+
 **v0.1.2**
 * Fix toc file
 
