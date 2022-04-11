@@ -15,6 +15,10 @@ If there are any suggestions/problems, please contact me.
 
 **Revisions:**
 
+**v0.1.4**
+* Fix 'watch wave' translation
+* Fix 'meteor run' voice
+
 **v0.1.3**
 * Fix 'run out' translation
 
