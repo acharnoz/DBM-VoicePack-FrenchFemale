@@ -15,6 +15,16 @@ If there are any suggestions/problems, please contact me.
 
 **Revisions:**
 
+* Fix translations:
+  * [backtowhereyouwere.ogg][fr] 'Retournez à l'endroit où vous étiez!'
+  * [backward.ogg][fr] 'Détournez-vous de l'équipe!'
+  * [bait.ogg][fr] 'Appâtez maintenant!'
+  * [farfromline.ogg][fr] 'Restez à l'écart des lignes !'
+  * [iceorbmove.ogg][fr] 'orbe de glace, éloignez-vous !'
+  * [mobenough.ogg][fr] 'énergie pleine! Restez à l'écart des adds!'
+  * [runaway.ogg][fr] 'Fuyez !'
+  * [turnaway.ogg][fr] 'Détournez-vous!'
+   
 **v0.1.4**
 * Fix 'watch wave' translation
 * Fix 'meteor run' voice
