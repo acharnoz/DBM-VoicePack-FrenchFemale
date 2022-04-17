@@ -15,6 +15,21 @@ If there are any suggestions/problems, please contact me.
 
 **Revisions:**
 
+**v0.2.0**
+* Change Female Voice (use AWS services)
+* Speed up the voice
+* Augment audio gain
+* Fix translations:
+  * aesoon.ogg: 'a o e imminente' => 'AO E, imminente'
+  * attackblood.ogg: 'Attaquez le globule sanguine' => 'Attaquez le globule sanguin'
+  * kick1r.ogg: 'interrompez un' => 'Première interruption'
+  * kick2r.ogg: 'interrompez deux' => 'Seconde interruption'
+  * kick3r.ogg: 'interrompez trois' => 'Troisième interruption'
+  * kick4r.ogg: 'interrompez quatre' => 'Quatrième interruption'
+  * kick5r.ogg: 'interrompez cinq' => 'Cinquième interruption'
+  * stopcast.ogg: 'arrêtez d'incanter' => 'arrêtez l'incantation'
+
+**v0.1.5**
 * Fix translations:
   * [backtowhereyouwere.ogg][fr] 'Retournez à l'endroit où vous étiez!'
   * [backward.ogg][fr] 'Détournez-vous de l'équipe!'
