@@ -1,5 +1,5 @@
-# DBM-VoicePack-FrenchFemale
-This is a french female voice pack for DBM (Deadly Boss Mods) created by Milho and Daydream (Dalaran EU Realm). It provides voices for most important events tracked by DBM. Make sure you have previously installed an updated version of DBM before installing this addon.
+# DBM-VoicePack
+This is voice packs for DBM (Deadly Boss Mods) created by Milho and Daydream (Dalaran EU Realm). It provides voices for most important events tracked by DBM. Make sure you have previously installed an updated version of DBM before installing this addon.
 
 **Remarks:**
 * This plugin is in beta version and translations are still being adjusted, do not hesitate to give us feedback !
@@ -9,51 +9,17 @@ This is a french female voice pack for DBM (Deadly Boss Mods) created by Milho a
 1. Type in the console /dbm. This opens the Deadly Boss Mods options window.
 1. Select the Options tab.
 1. In the list that appears below, select the Voice Alerts option in General Options.
-1. In the box on the right, select "French Female by Milho" in the combo with the heading Voice package for voice alerts.
+1. In the box on the right, select "French XXXX by Milho" in the combo with the heading Voice package for voice alerts.
  
 If there are any suggestions/problems, please contact me.
-
-**Revisions:**
-
-**v0.2.0**
-* Change Female Voice (use AWS services)
-* Speed up the voice
-* Augment audio gain
-* Fix translations:
-  * aesoon.ogg: 'a o e imminente' => 'AO E, imminente'
-  * attackblood.ogg: 'Attaquez le globule sanguine' => 'Attaquez le globule sanguin'
-  * kick1r.ogg: 'interrompez un' => 'Première interruption'
-  * kick2r.ogg: 'interrompez deux' => 'Seconde interruption'
-  * kick3r.ogg: 'interrompez trois' => 'Troisième interruption'
-  * kick4r.ogg: 'interrompez quatre' => 'Quatrième interruption'
-  * kick5r.ogg: 'interrompez cinq' => 'Cinquième interruption'
-  * stopcast.ogg: 'arrêtez d'incanter' => 'arrêtez l'incantation'
-
-**v0.1.5**
-* Fix translations:
-  * [backtowhereyouwere.ogg][fr] 'Retournez à l'endroit où vous étiez!'
-  * [backward.ogg][fr] 'Détournez-vous de l'équipe!'
-  * [bait.ogg][fr] 'Appâtez maintenant!'
-  * [farfromline.ogg][fr] 'Restez à l'écart des lignes !'
-  * [iceorbmove.ogg][fr] 'orbe de glace, éloignez-vous !'
-  * [mobenough.ogg][fr] 'énergie pleine! Restez à l'écart des adds!'
-  * [runaway.ogg][fr] 'Fuyez !'
-  * [turnaway.ogg][fr] 'Détournez-vous!'
-   
-**v0.1.4**
-* Fix 'watch wave' translation
-* Fix 'meteor run' voice
-
-**v0.1.3**
-* Fix 'run out' translation
-
-**v0.1.2**
-* Fix toc file
-
-**v0.1.1**
-* Fix di.ogg and didi.ogg
-
-**v0.1.0**
-* Initial alpha version
-
  
+**How update audio files for DBM (reminder)**
+
+* generate-new-dico script
+* translate dummy texts, check version of VPVEM
+* Remove in dbm dictioannary "di.ogg": "DUMMY", "didi.ogg": "DUMMY"
+* cd .\WOW-VoicePack-Generator\
+
+
+* python scripts\cmd-oggfiles-update-voicepack.py -c .\my-audio-configs\aws-french-optimal-config.json .\dbm-dictionaries\dbm-vp-fr.json ..\DBM-VoicePack-FrenchFemale\DBM-VPFrenchFemale\dictionary.json -o .\test\ -e AWS
+* copy generated file from test to ..\DBM-VoicePack-FrenchFemale\DBM-VPFrenchFemale\dictionary.json

@@ -1,0 +1,17 @@
+## Interface: 11403
+
+## X-Min-Interface: 100005
+## X-Min-Interface-Classic: 11403
+## X-Min-Interface-Wrath: 30401
+
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Voicepack French Female by Milho|r
+## DefaultState: enabled
+## RequiredDeps: DBM-Core
+## Author: Milho
+## Version: 0.2.5
+## X-Curse-Project-ID: 607104
+## X-DBM-Voice: 1
+## X-DBM-Voice-Name: French Female by Milho
+## X-DBM-Voice-ShortName: FrenchFemale
+## X-DBM-Voice-Version: 13
+## X-DBM-Voice-HasCount: 1

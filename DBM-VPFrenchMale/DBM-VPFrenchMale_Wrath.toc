@@ -1,0 +1,16 @@
+## Interface: 30401
+
+## X-Min-Interface: 100005
+## X-Min-Interface-Classic: 11403
+## X-Min-Interface-Wrath: 30401
+
+## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Voicepack French Male by Milho|r
+## DefaultState: enabled
+## RequiredDeps: DBM-Core
+## Author: Milho
+## Version: 0.1.0
+## X-DBM-Voice: 1
+## X-DBM-Voice-Name: French Male by Milho
+## X-DBM-Voice-ShortName: FrenchMale
+## X-DBM-Voice-Version: 13
+## X-DBM-Voice-HasCount: 1

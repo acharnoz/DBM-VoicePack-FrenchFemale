@@ -15,6 +15,41 @@ If there are any suggestions/problems, please contact me.
 
 **Revisions:**
 
+**v0.2.5**
+* Support new client interface
+* Add new files
+	* 'chainboss.ogg': 'Enchaînez les boss',
+    * 'movetopillar.ogg': 'Allez au pilier',
+    * 'negative.ogg': 'Négatif',
+    * 'polarityshift.ogg': 'Changement de polarité',
+    * 'positive.ogg': 'Positif',
+    * 'pushbackincoming.ogg': 'Repoussement imminent'
+		
+**v0.2.4**
+* Support new client interface
+
+**v0.2.3**
+* Support new client interface
+
+**v0.2.2**
+* Support new client interface
+
+**v0.2.1**
+* Fix translations:
+  * aesoon.ogg: 'AO E, imminente' => 'sort de zone imminent'
+  * east.ogg: 'Est' => 'aist'
+  * gathershare.ogg: 'Partagez les stacks' => 'Partagez les stack'
+  * group3.ogg: 'Groupe tros' => 'Groupe trois'
+  * killmob.ogg: 'tuez les adds' => 'tuez les ad'
+  * mobenough.ogg: 'énergie pleine! Restez à l'écart des adds!' => 'énergie pleine! Restez à l'écart des ad!'
+  * mobkill.ogg: 'tuez les adds' => 'tuez les ad'
+  * mobout.ogg: 'Sortez les adds' => 'Sortez les ad'
+  * mobsoon.ogg: 'Adds en approche' => 'Ad en approche'
+  * northeast.ogg: 'Nord Est' => 'Noreste'
+  * orbrun.ogg: 'orbe. Cours.' => 'orbe. Courez.'
+  * southeast.ogg: 'Sud Est' => 'su deste'
+  * watchorb.ogg: 'regardez l'orbe' => 'attention à l'orbe'
+  
 **v0.2.0**
 * Change Female Voice (use AWS services)
 * Speed up the voice
