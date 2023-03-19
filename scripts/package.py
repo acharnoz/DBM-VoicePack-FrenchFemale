@@ -1,6 +1,11 @@
 import shutil
 from pathlib import Path
 
+Interface = "100005"
+InterfaceWrath = "30401"
+InterfaceClassic = "11403"
+DIPPKG_PATH = Path("G:\Dev\DBM-VoicePack\zip-files")
+ADDON_path = Path("G:\Dev\DBM-VoicePack")
 
 def replace_keys(key_to_var, filepath: Path):
     # Opening our text file in read only
@@ -27,31 +32,33 @@ def replace_keys(key_to_var, filepath: Path):
     # Printing Text replaced
     print("Text replaced")
 
-key_to_var = {}
-key_to_var["DBMEA_VERSION_KEY"] = "0.3.1"
+def package_addon(addon_name:str, version:str):
 
-src1 = Path("G:\\Dev\\DBMEventAnnouncement\\DBMEA")
-src2 = Path("G:\\Dev\\DBMEventAnnouncement\\DBMEA-FR-Voicepacks")
-src3 = Path("G:\\Dev\\DBMEventAnnouncement\\DBMEA-EN-Voicepacks")
-wow_addon_pkg = Path("G:\\Dev\\DBMEventAnnouncement\\package\\DBMEA")
+    key_to_var = {}
+    key_to_var["INTERFACE_KEY"] = Interface
+    key_to_var["INTERFACECLASSIC_KEY"] = InterfaceWrath
+    key_to_var["INTERFACEWARTH_KEY"] = InterfaceClassic
+    key_to_var["VERSION_KEY"] = version
 
-addons = [src1]
-
-for child in src2.iterdir():
-    addons.append(child)
-
-for child in src3.iterdir():
-    addons.append(child)
-
-for p in addons:
-    addon_name = p.name
-    dest = wow_addon_pkg / addon_name
+    src = ADDON_path / addon_name
+    dest = DIPPKG_PATH / addon_name
     if dest.exists():
         shutil.rmtree(dest)
-    shutil.copytree(p, dest)
+    shutil.copytree(src, dest)
 
-output_DBMEA_toc = Path(wow_addon_pkg / "DBMEA" / "DBMEA.toc")
-replace_keys(key_to_var, output_DBMEA_toc)
+    files = []
+    files.append(addon_name+".toc")
+    files.append(addon_name+"_Vanilla.toc")
+    files.append(addon_name+"_Wrath.toc")
+    for file in files:
+        toc_file = Path(dest / file)
+        replace_keys(key_to_var, toc_file)
 
-output_filename = Path(wow_addon_pkg.parent / (wow_addon_pkg.name + "_v" + key_to_var["DBMEA_VERSION_KEY"]) )
-shutil.make_archive(output_filename, 'zip', wow_addon_pkg)
+    zippath = Path(dest.parent / (dest.name + "_multi" + "_v" + version) )
+    shutil.make_archive(zippath, 'zip', dest)
+    shutil.rmtree(dest)
+
+package_addon("DBM-VPEnglishFemale", "0.1.0")
+package_addon("DBM-VPFrenchFemale", "0.2.6")
+package_addon("DBM-VPEnglishMale", "0.1.0")
+package_addon("DBM-VPFrenchMale", "0.1.0")

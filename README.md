@@ -20,6 +20,4 @@ If there are any suggestions/problems, please contact me.
 * Remove in dbm dictioannary "di.ogg": "DUMMY", "didi.ogg": "DUMMY"
 * cd .\WOW-VoicePack-Generator\
 
-
-* python scripts\cmd-oggfiles-update-voicepack.py -c .\my-audio-configs\aws-french-optimal-config.json .\dbm-dictionaries\dbm-vp-fr.json ..\DBM-VoicePack-FrenchFemale\DBM-VPFrenchFemale\dictionary.json -o .\test\ -e AWS
-* copy generated file from test to ..\DBM-VoicePack-FrenchFemale\DBM-VPFrenchFemale\dictionary.json
+* update-voicepacks script
