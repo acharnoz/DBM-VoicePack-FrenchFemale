@@ -41,7 +41,7 @@ def package_addon(addon_name:str, version:str):
     key_to_var["VERSION_KEY"] = version
 
     src = ADDON_path / addon_name
-    dest = DIPPKG_PATH / addon_name
+    dest = DIPPKG_PATH / addon_name / addon_name
     if dest.exists():
         shutil.rmtree(dest)
     shutil.copytree(src, dest)
@@ -54,11 +54,11 @@ def package_addon(addon_name:str, version:str):
         toc_file = Path(dest / file)
         replace_keys(key_to_var, toc_file)
 
-    zippath = Path(dest.parent / (dest.name + "_multi" + "_v" + version) )
-    shutil.make_archive(zippath, 'zip', dest)
-    shutil.rmtree(dest)
+    zippath = Path( DIPPKG_PATH / (addon_name + "_multi" + "_v" + version) )
+    shutil.make_archive(zippath, 'zip', DIPPKG_PATH / addon_name )
+    shutil.rmtree(DIPPKG_PATH / addon_name)
 
 package_addon("DBM-VPEnglishFemale", "0.1.0")
-package_addon("DBM-VPFrenchFemale", "0.2.6")
+package_addon("DBM-VPFrenchFemale", "0.2.7")
 package_addon("DBM-VPEnglishMale", "0.1.0")
 package_addon("DBM-VPFrenchMale", "0.1.0")
