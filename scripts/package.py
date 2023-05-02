@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-Interface = "100005"
+Interface = "100007"
 InterfaceWrath = "30401"
 InterfaceClassic = "11403"
 DIPPKG_PATH = Path("G:\Dev\DBM-VoicePack\zip-files")
@@ -58,7 +58,7 @@ def package_addon(addon_name:str, version:str):
     shutil.make_archive(zippath, 'zip', DIPPKG_PATH / addon_name )
     shutil.rmtree(DIPPKG_PATH / addon_name)
 
-package_addon("DBM-VPEnglishFemale", "0.1.0")
-package_addon("DBM-VPFrenchFemale", "0.2.7")
-package_addon("DBM-VPEnglishMale", "0.1.0")
-package_addon("DBM-VPFrenchMale", "0.1.0")
+package_addon("DBM-VPEnglishFemale", "0.1.1")
+package_addon("DBM-VPFrenchFemale", "0.2.8")
+package_addon("DBM-VPEnglishMale", "0.1.1")
+package_addon("DBM-VPFrenchMale", "0.1.1")

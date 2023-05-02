@@ -43,36 +43,36 @@ FR_VP_JSON_PATH = VPGEN_path / "dbm-dictionaries" / "dbm-vp-fr.json"
 
 cfgFemaleFR = VPGEN_path / "my-audio-configs" / "aws-fr-female-cfg.json"
 addonFemaleFR = ADDON_path / "DBM-VPFrenchFemale"
-#params.append([cfgFemaleFR,addonFemaleFR,FR_VP_JSON_PATH])
+params.append([cfgFemaleFR,addonFemaleFR,FR_VP_JSON_PATH])
 
 cfgMaleFR = VPGEN_path / "my-audio-configs" / "aws-fr-male-cfg.json"
 addonMaleFR = ADDON_path / "DBM-VPFrenchMale"
-#params.append([cfgMaleFR,addonMaleFR,FR_VP_JSON_PATH])
+params.append([cfgMaleFR,addonMaleFR,FR_VP_JSON_PATH])
 
 cfgFemaleEN = VPGEN_path / "my-audio-configs" / "aws-en-female-cfg.json"
 addonFemaleEN = ADDON_path / "DBM-VPEnglishFemale"
-#params.append([cfgFemaleEN,addonFemaleEN,EN_VP_JSON_PATH])
+params.append([cfgFemaleEN,addonFemaleEN,EN_VP_JSON_PATH])
 
 cfgMaleEN = VPGEN_path / "my-audio-configs" / "aws-en-male-cfg.json"
 addonMaleEN = ADDON_path / "DBM-VPEnglishMale"
-#params.append([cfgMaleEN,addonMaleEN,EN_VP_JSON_PATH])
+params.append([cfgMaleEN,addonMaleEN,EN_VP_JSON_PATH])
 
 
-# Update pkg
-# for param in params:
+#Update pkg
+for param in params:
 
-#     CFG = param[0]
-#     ADDON = param[1]
-#     VP_JSON_PATH = param[2]
-#     ADDON_JSON = ADDON / "dictionary.json"
+    CFG = param[0]
+    ADDON = param[1]
+    VP_JSON_PATH = param[2]
+    ADDON_JSON = ADDON / "dictionary.json"
 
-#     cmd = f"python \"{cmdoggfilesupdatevoicepack}\" -c {CFG} {VP_JSON_PATH} {ADDON_JSON} -o {TMPDIR_path} -e AWS"
-#     print(cmd)
-#     os.system(cmd)
-#     merge_directories(TMPDIR_path, SOUNDSDIR_path)
-#     merge_directories(ADDON, TMPDIR_path)
-#     shutil.rmtree(TMPDIR_path)
-#     os.mkdir(TMPDIR_path) 
+    cmd = f"python \"{cmdoggfilesupdatevoicepack}\" -c {CFG} {VP_JSON_PATH} {ADDON_JSON} -o {TMPDIR_path} -e AWS"
+    print(cmd)
+    os.system(cmd)
+    merge_directories(TMPDIR_path, SOUNDSDIR_path)
+    merge_directories(ADDON, TMPDIR_path)
+    shutil.rmtree(TMPDIR_path)
+    os.mkdir(TMPDIR_path) 
 
 # Generate all files
 # for param in params:
