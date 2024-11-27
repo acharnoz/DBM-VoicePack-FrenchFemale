@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-addonversion = "0.3.2"
+addonversion = "0.3.3"
 
 Interface = "110005"
 InterfaceCata = "40401"
