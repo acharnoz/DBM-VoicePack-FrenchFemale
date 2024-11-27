@@ -4,10 +4,10 @@ from pathlib import Path
 addonversion = "0.3.2"
 
 Interface = "110005"
-InterfaceCata = "40400"
+InterfaceCata = "40401"
 InterfaceWrath = "30403"
 InterfaceTBC = "20504"
-InterfaceClassic = "11502"
+InterfaceClassic = "11504"
 
 DBMVoiceVersion = "17"
 
@@ -44,7 +44,7 @@ def package_addon(addon_name:str, version:str):
     key_to_var = {}
     key_to_var["INTERFACE_KEY"] = Interface
     key_to_var["INTERFACECLASSIC_KEY"] = InterfaceClassic
-    key_to_var["INTERFACEWARTH_KEY"] = InterfaceWrath
+    key_to_var["INTERFACEWRATH_KEY"] = InterfaceWrath
     key_to_var["INTERFACETBC_KEY"] = InterfaceTBC
     key_to_var["INTERFACECATA_KEY"] = InterfaceCata
     key_to_var["VERSION_KEY"] = version
@@ -59,6 +59,9 @@ def package_addon(addon_name:str, version:str):
 
     files = []
     files.append(addon_name+".toc")
+    files.append(addon_name+"_Vanilla.toc")
+    files.append(addon_name+"_Wrath.toc")
+    files.append(addon_name+"_Cata.toc")
     for file in files:
         toc_file = Path(dest / file)
         replace_keys(key_to_var, toc_file)
