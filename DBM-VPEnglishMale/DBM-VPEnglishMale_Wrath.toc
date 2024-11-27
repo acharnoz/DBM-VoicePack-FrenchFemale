@@ -13,5 +13,5 @@
 ## X-DBM-Voice: 1
 ## X-DBM-Voice-Name: English Male by Milho
 ## X-DBM-Voice-ShortName: EnglishMale
-## X-DBM-Voice-Version: 13
+## X-DBM-Voice-Version: DBM_VOICE_KEY
 ## X-DBM-Voice-HasCount: 1

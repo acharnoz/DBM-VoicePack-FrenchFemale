@@ -13,5 +13,5 @@
 ## X-DBM-Voice: 1
 ## X-DBM-Voice-Name: French Male by Milho
 ## X-DBM-Voice-ShortName: FrenchMale
-## X-DBM-Voice-Version: 13
+## X-DBM-Voice-Version: DBM_VOICE_KEY
 ## X-DBM-Voice-HasCount: 1
