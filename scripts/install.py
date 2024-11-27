@@ -8,11 +8,11 @@ InterfaceCata = "40400"
 InterfaceWrath = "30403"
 InterfaceTBC = "20504"
 InterfaceClassic = "11502"
-
 DBMVoiceVersion = "17"
 
 DIPPKG_PATH = Path("G:\Dev\DBM-VoicePack\zip-files")
 ADDON_path = Path("G:\Dev\DBM-VoicePack")
+wow_addon_path=Path("G:\\World of Warcraft\\_retail_\\Interface\\AddOns")
 
 def replace_keys(key_to_var, filepath: Path):
     # Opening our text file in read only
@@ -39,7 +39,7 @@ def replace_keys(key_to_var, filepath: Path):
     # Printing Text replaced
     print("Text replaced")
 
-def package_addon(addon_name:str, version:str):
+def install_addon(addon_name:str, version:str):
 
     key_to_var = {}
     key_to_var["INTERFACE_KEY"] = Interface
@@ -51,9 +51,8 @@ def package_addon(addon_name:str, version:str):
     key_to_var["DBM_VOICE_KEY"] = DBMVoiceVersion
 
     src = ADDON_path / addon_name
-    dest = DIPPKG_PATH / addon_name / addon_name
+    dest = wow_addon_path / addon_name
     if dest.exists():
-        
         shutil.rmtree(dest)
     shutil.copytree(src, dest)
 
@@ -63,11 +62,7 @@ def package_addon(addon_name:str, version:str):
         toc_file = Path(dest / file)
         replace_keys(key_to_var, toc_file)
 
-    zippath = Path( DIPPKG_PATH / (addon_name + "_multi" + "_v" + version) )
-    shutil.make_archive(zippath, 'zip', DIPPKG_PATH / addon_name )
-    shutil.rmtree(DIPPKG_PATH / addon_name)
-
-package_addon("DBM-VPEnglishFemale", addonversion)
-package_addon("DBM-VPFrenchFemale", addonversion)
-package_addon("DBM-VPEnglishMale", addonversion)
-package_addon("DBM-VPFrenchMale", addonversion)
+install_addon("DBM-VPEnglishFemale", addonversion)
+install_addon("DBM-VPFrenchFemale", addonversion)
+install_addon("DBM-VPEnglishMale", addonversion)
+install_addon("DBM-VPFrenchMale", addonversion)

@@ -14,10 +14,14 @@ This is voice packs for DBM (Deadly Boss Mods) created by Milho and Daydream (Da
 If there are any suggestions/problems, please contact me.
  
 **How update audio files for DBM (reminder)**
-
-* generate-new-dico script
-* translate dummy texts, check version of VPVEM
+* check toc format https://wowpedia.fandom.com/wiki/TOC_format
+* generate-new-dico script (ctl F5 ici)
+* Then in G:\Dev\WOW-VoicePack-Generator\dbm-dictionaries
+* translate dummy texts, check version of VPVEM (update DMB Voice version un package and install script)
 * Remove in dbm dictioannary "di.ogg": "DUMMY", "didi.ogg": "DUMMY"
-* cd .\WOW-VoicePack-Generator\
-
-* update-voicepacks script
+* After update, rename new-dbm-vp-en.json/new-dbm-vp-fr.json in dbm-vp-en.json / dbm-vp-fr.json
+* (in the powershell console) cd G:\Dev\WOW-VoicePack-Generator\
+* launch poetry shell
+* cd G:\Dev\DBM-VoicePack\scripts>
+* python .\update-voicepacks.py
+* lancer ensuite package.py script (sous visual) (ctl F5 ici)
