@@ -1,8 +1,9 @@
-## Interface: INTERFACEWARTH_KEY
+## Interface: INTERFACEWRATH_KEY
 
 ## X-Min-Interface: INTERFACE_KEY
 ## X-Min-Interface-Classic: INTERFACECLASSIC_KEY
-## X-Min-Interface-Wrath: INTERFACEWARTH_KEY
+## X-Min-Interface-Wrath: INTERFACEWRATH_KEY
+## X-Min-Interface-Cata: INTERFACECATA_KEY
 
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Voicepack English Male by Milho|r
 ## DefaultState: enabled
