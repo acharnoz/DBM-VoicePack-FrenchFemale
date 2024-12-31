@@ -6,7 +6,7 @@
         "Daydream, Dalaran EU Realm"
     ],
     "version": "0.2",
-    "version_date": "2024-07-25",
+    "version_date": "2024-12-31",
     "VPVEM_reference": "4b57685",
     "dummy_text": "This voice has not yet been generated.",
     "description": "",
@@ -377,6 +377,16 @@
         "rageyou.ogg": "Rage on you",
         "redyou.ogg": "Red on you",
         "stopchargewithline.ogg": "Stop charge with line",
-        "yellowyou.ogg": "Yellow on you"
+        "yellowyou.ogg": "Yellow on you",
+        "enteringcombat.ogg": "Entering combat",
+        "findclearvent.ogg": "Find clear vent",
+        "leavingcombat.ogg": "Leaving combat",
+        "movetoflamethrower.ogg": "Move to flamethrower",
+        "movetotendrils.ogg": "Move to tendrils",
+        "riftdispel.ogg": "Rift dispel",
+        "rollincoming.ogg": "Roll incoming",
+        "runovermobs.ogg": "Run over mobs",
+        "soakbeam.ogg": "Soak beam",
+        "chargethroughbomb.ogg": "Charge through bomb"
     }
 }
