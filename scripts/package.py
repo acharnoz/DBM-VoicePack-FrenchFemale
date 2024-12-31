@@ -1,15 +1,16 @@
 import shutil
 from pathlib import Path
 
-addonversion = "0.3.3"
+addonversion = "0.3.6"
+DBMVoiceVersion = "18"
 
-Interface = "110005"
+Interface = "110007"
 InterfaceCata = "40401"
 InterfaceWrath = "30403"
 InterfaceTBC = "20504"
-InterfaceClassic = "11504"
+InterfaceClassic = "11505"
 
-DBMVoiceVersion = "17"
+
 
 DIPPKG_PATH = Path("G:\Dev\DBM-VoicePack\zip-files")
 ADDON_path = Path("G:\Dev\DBM-VoicePack")
