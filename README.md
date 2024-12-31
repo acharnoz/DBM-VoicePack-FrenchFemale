@@ -22,6 +22,11 @@ If there are any suggestions/problems, please contact me.
 * After update, rename new-dbm-vp-en.json/new-dbm-vp-fr.json in dbm-vp-en.json / dbm-vp-fr.json
 * (in the powershell console) cd G:\Dev\WOW-VoicePack-Generator\
 * launch poetry shell
-* cd G:\Dev\DBM-VoicePack\scripts>
+* cd G:\Dev\DBM-VoicePack\scripts
 * python .\update-voicepacks.py
 * lancer ensuite package.py script (sous visual) (ctl F5 ici)
+
+** How push to Curse
+* edit the push_script.ps1 file to change the addon version (or wow version client)
+* cd  G:\Dev\DBM-VoicePack\zip-files
+* .\push_script.ps1 (execute)
