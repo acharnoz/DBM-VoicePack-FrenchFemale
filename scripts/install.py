@@ -5,7 +5,7 @@ addonversion = "0.3.6"
 DBMVoiceVersion = "18"
 
 Interface = "110107"
-InterfaceMoP = "50500"
+InterfaceMists = "50500"
 InterfaceCata = "40402"
 InterfaceWrath = "30404"
 InterfaceTBC = "20504"
@@ -48,7 +48,7 @@ def install_addon(addon_name:str, version:str):
     key_to_var["INTERFACETBC_KEY"] = InterfaceTBC
     key_to_var["INTERFACEWARTH_KEY"] = InterfaceWrath
     key_to_var["INTERFACECATA_KEY"] = InterfaceCata
-    key_to_var["INTERFACEMOP_KEY"] = InterfaceMoP
+    key_to_var["INTERFACEMISTS_KEY"] = InterfaceMists
     key_to_var["VERSION_KEY"] = version
     key_to_var["DBM_VOICE_KEY"] = DBMVoiceVersion
 

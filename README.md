@@ -14,7 +14,7 @@ This is voice packs for DBM (Deadly Boss Mods) created by Milho and Daydream (Da
 If there are any suggestions/problems, please contact me.
  
 **How update audio files for DBM (reminder)**
-* check toc format https://wowpedia.fandom.com/wiki/TOC_format
+* check toc format https://warcraft.wiki.gg/wiki/TOC_format
 * generate-new-dico script (ctl F5 ici)
 * Then in G:\Dev\WOW-VoicePack-Generator\dbm-dictionaries
 * translate dummy texts, check version of VPVEM (update DMB Voice version un package and install script)
