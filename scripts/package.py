@@ -1,14 +1,14 @@
 import shutil
 from pathlib import Path
 
-addonversion = "0.3.6"
+addonversion = "0.3.14"
 DBMVoiceVersion = "18"
 
-Interface = "110007"
-InterfaceCata = "40401"
-InterfaceWrath = "30403"
+Interface = "110107"
+InterfaceCata = "40402"
+InterfaceWrath = "30404"
 InterfaceTBC = "20504"
-InterfaceClassic = "11505"
+InterfaceClassic = "11507"
 
 
 
