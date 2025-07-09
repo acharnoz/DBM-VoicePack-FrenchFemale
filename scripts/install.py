@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-addonversion = "0.3.6"
+addonversion = "0.3.8"
 DBMVoiceVersion = "18"
 
 Interface = "110107"

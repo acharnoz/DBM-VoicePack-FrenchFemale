@@ -15,6 +15,7 @@ If there are any suggestions/problems, please contact me.
  
 **How update audio files for DBM (reminder)**
 * check toc format https://warcraft.wiki.gg/wiki/TOC_format
+* https://github.com/DeadlyBossMods/DBM-Voicepack-VEM/tree/master/DBM-VPVEM
 * generate-new-dico script (ctl F5 ici)
 * Then in G:\Dev\WOW-VoicePack-Generator\dbm-dictionaries
 * translate dummy texts, check version of VPVEM (update DMB Voice version un package and install script)
