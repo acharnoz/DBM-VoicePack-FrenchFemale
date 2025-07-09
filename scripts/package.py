@@ -5,6 +5,7 @@ addonversion = "0.3.14"
 DBMVoiceVersion = "18"
 
 Interface = "110107"
+InterfaceMists = "50500"
 InterfaceCata = "40402"
 InterfaceWrath = "30404"
 InterfaceTBC = "20504"
@@ -45,9 +46,10 @@ def package_addon(addon_name:str, version:str):
     key_to_var = {}
     key_to_var["INTERFACE_KEY"] = Interface
     key_to_var["INTERFACECLASSIC_KEY"] = InterfaceClassic
-    key_to_var["INTERFACEWRATH_KEY"] = InterfaceWrath
     key_to_var["INTERFACETBC_KEY"] = InterfaceTBC
+    key_to_var["INTERFACEWARTH_KEY"] = InterfaceWrath
     key_to_var["INTERFACECATA_KEY"] = InterfaceCata
+    key_to_var["INTERFACEMISTS_KEY"] = InterfaceMists
     key_to_var["VERSION_KEY"] = version
     key_to_var["DBM_VOICE_KEY"] = DBMVoiceVersion
 
@@ -63,6 +65,7 @@ def package_addon(addon_name:str, version:str):
     files.append(addon_name+"_Vanilla.toc")
     files.append(addon_name+"_Wrath.toc")
     files.append(addon_name+"_Cata.toc")
+    files.append(addon_name+"_Mists.toc")
     for file in files:
         toc_file = Path(dest / file)
         replace_keys(key_to_var, toc_file)
