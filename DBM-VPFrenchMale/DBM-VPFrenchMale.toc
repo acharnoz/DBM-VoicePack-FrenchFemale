@@ -1,9 +1,4 @@
-## Interface: INTERFACE_KEY
-
-## X-Min-Interface: INTERFACE_KEY
-## X-Min-Interface-Classic: INTERFACECLASSIC_KEY
-## X-Min-Interface-Wrath: INTERFACEWRATH_KEY
-## X-Min-Interface-Cata: INTERFACECATA_KEY
+## Interface: INTERFACE_KEY, INTERFACECLASSIC_KEY, INTERFACETBC_KEY, INTERFACEWARTH_KEY, INTERFACECATA_KEY, INTERFACEMISTS_KEY
 
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Voicepack French Male by Milho|r
 ## DefaultState: enabled

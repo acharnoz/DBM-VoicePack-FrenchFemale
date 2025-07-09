@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-addonversion = "0.3.14"
+addonversion = "0.3.15"
 DBMVoiceVersion = "18"
 
 Interface = "110107"
@@ -10,7 +10,6 @@ InterfaceCata = "40402"
 InterfaceWrath = "30404"
 InterfaceTBC = "20504"
 InterfaceClassic = "11507"
-
 
 
 DIPPKG_PATH = Path("G:\Dev\DBM-VoicePack\zip-files")
@@ -62,10 +61,6 @@ def package_addon(addon_name:str, version:str):
 
     files = []
     files.append(addon_name+".toc")
-    files.append(addon_name+"_Vanilla.toc")
-    files.append(addon_name+"_Wrath.toc")
-    files.append(addon_name+"_Cata.toc")
-    files.append(addon_name+"_Mists.toc")
     for file in files:
         toc_file = Path(dest / file)
         replace_keys(key_to_var, toc_file)
