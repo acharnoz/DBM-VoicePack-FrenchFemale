@@ -4,10 +4,10 @@ from pathlib import Path
 addonversion = "0.3.15"
 DBMVoiceVersion = "18"
 
-Interface = "110107"
-InterfaceMists = "50500"
+Interface = "110200"
+InterfaceMists = "50501"
 InterfaceCata = "40402"
-InterfaceWrath = "30404"
+InterfaceWrath = "30405"
 InterfaceTBC = "20504"
 InterfaceClassic = "11507"
 
