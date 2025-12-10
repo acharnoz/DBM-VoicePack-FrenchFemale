@@ -5,7 +5,7 @@ addonversion = "0.3.15"
 DBMVoiceVersion = "18"
 
 Interface = "110207"
-InterfaceMists = "50502"
+InterfaceMists = "50503"
 InterfaceCata = "40402"
 InterfaceWrath = "38000"
 InterfaceTBC = "20504"
