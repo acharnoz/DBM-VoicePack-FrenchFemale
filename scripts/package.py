@@ -4,12 +4,12 @@ from pathlib import Path
 addonversion = "0.3.15"
 DBMVoiceVersion = "18"
 
-Interface = "110107"
-InterfaceMists = "50500"
+Interface = "110207"
+InterfaceMists = "50503"
 InterfaceCata = "40402"
-InterfaceWrath = "30404"
+InterfaceWrath = "38000"
 InterfaceTBC = "20504"
-InterfaceClassic = "11507"
+InterfaceClassic = "11508"
 
 
 DIPPKG_PATH = Path("G:\Dev\DBM-VoicePack\zip-files")
